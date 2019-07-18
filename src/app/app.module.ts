@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { NgModule, ViewChildren, ViewChild } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 
@@ -13,6 +13,21 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { OnHoverDirective } from './on-hover.directive';
 import { ParagraphChangeDirective } from './paragraph.directive';
+import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+    pathMatch: 'full'
+
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  } //50min mark in video
+];
 
 
 @NgModule({
@@ -25,11 +40,15 @@ import { ParagraphChangeDirective } from './paragraph.directive';
     SidebarComponent,
     SignupFormComponent,
     OnHoverDirective,
-    ParagraphChangeDirective
+    ParagraphChangeDirective,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    RouterModule.forRoot(routes) //.forRoot is super crucial
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
