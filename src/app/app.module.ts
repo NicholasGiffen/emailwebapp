@@ -19,14 +19,22 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: LoginComponent,
     pathMatch: 'full'
 
   },
   {
-    path: 'login',
-    component: LoginComponent
-  } //50min mark in video
+    path: 'home',
+    component: HomeComponent
+  }, //50min mark in video
+  {
+    path: 'signup',
+    component: SignupFormComponent
+  },
+  {
+    path: 'message',
+    component: MessageComponent
+  }
 ];
 
 
@@ -48,7 +56,7 @@ const routes: Routes = [
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forRoot(routes) //.forRoot is super crucial
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

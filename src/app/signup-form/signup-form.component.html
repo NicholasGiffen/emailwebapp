@@ -64,7 +64,11 @@
 
         <div class="row">
             <div class="col d-flex justify-content-center">
-                <button [disabled]='signupForm.invalid' type="submit" class="btn btn-primary">Sign up</button>
+                <a routerLink="/">
+                        <!-- [disabled]='signupForm.invalid' type="submit"   -------took out of button -->
+                    <button   class="btn btn-light">Sign up</button>
+                    
+            </a>
             </div>
         </div>
         
