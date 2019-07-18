@@ -1,0 +1,73 @@
+<div class="bg-primary container mt-5">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="row text-center">
+            <div class="col ">
+            <h2 class="text-white" for="">Sign up form</h2>
+        </div>
+    </div>
+
+
+
+
+            <!--Input field for Email-->
+
+        <div class="row">
+            <div class="col">
+                    <div class="form-group">
+                            <label for="">Email:</label>
+                            <input type="text" class="form-control" formControlName="email">
+                        </div>
+            </div>
+        </div>
+
+                <!--Input field for Password-->
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                        <label for="">Password:</label>
+                        <input type="password" class="form-control" formControlName="password">
+                </div>
+            </div>
+        </div>
+
+        <!--Input field for Re-type password-->
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                        <label for="">Re-Type Password:</label>
+                        <input type="password" class="form-control" formControlName="password">
+                </div>
+            </div>
+        </div>
+
+        <!--Input field for Re--->
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" class="form-control" formControlName="name">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                            <label for="">Phone Number</label>
+                            <input type="tel" class="form-control" formControlName="phone">
+                    </div>
+                </div>
+            </div>
+        
+
+
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <button [disabled]='signupForm.invalid' type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+        
+
+    </form>
+</div>

@@ -1,0 +1,98 @@
+<div class="bg-primary container mt-5">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="row text-center">
+            <div class="col ">
+                <h2 class="text-white" for="">Message Form</h2>
+            </div>
+        </div>
+
+
+
+
+        <!--Input field for Email-->
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="">From</label>
+                    <input type="text" class="form-control" formControlName="from">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <button for="">CC</button>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <button for="">BCC</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!--Input field for Password-->
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="">Subject</label>
+                    <input type="text" class="form-control" formControlName="subject">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="">CC</label>
+                    <input type="password" class="form-control" formControlName="cc">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="">BCC</label>
+                    <input type="text" class="form-control" formControlName="bcc">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="">body</label>
+                    <input type="tel" class="form-control" formControlName="body">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="">Hyperlinks</label>
+                    <input type="tel" class="form-control" formControlName="hyperlinks">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <button [disabled]='signupForm.invalid' type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+
+
+    </form>
+</div>

@@ -1,0 +1,13 @@
+.container {
+    border: 1px solid #ccc;
+    margin-top: 16px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #aaa;
+    width: 60%;
+}
+
+.ng-invalid {
+    &.ng-touched {
+        border-color: #e30;
+    }
+}

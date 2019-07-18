@@ -1,0 +1,37 @@
+.container {
+    border: 2px solid #ccc;
+    margin-top: 16px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #aaa;
+    width: 60%;
+ 
+}
+
+
+
+
+.ng-invalid {
+    &.ng-touched {
+        border-color: #e30;
+    }
+}
+
+
+
+// .box {
+//     margin: 50px auto;
+//     background: #5FCF80;
+//     width: 150px;
+//     height: 150px;
+//   }
+//   .box:hover {
+//     transform: rotate(360deg);
+//     background: #9351A6;
+//     border-radius: 50%;
+//   }
+//   .rotate {
+//     transition: all 0.5s ease-in-out;
+//   }
+//   .rotate:hover {
+//     transition: all 1s ease-in-out;
+//   }
