@@ -7,7 +7,19 @@
  
 }
 
+.from {
+    display: flex;
+    align-items: left;
+}
 
+.width {
+    width: 300px;
+}
+
+
+.messagebox{
+    min-height: 200px;
+}
 
 
 .ng-invalid {
