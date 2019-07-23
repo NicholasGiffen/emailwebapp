@@ -15,6 +15,12 @@ import { OnHoverDirective } from './on-hover.directive';
 import { ParagraphChangeDirective } from './paragraph.directive';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { EmailService } from './services/email.service';
+import { RestService } from './services/rest.service';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from './services/auth.service';
+import { AuthGuardService } from './services/auth-guard.service';
+
 
 const routes: Routes = [
   {
@@ -55,10 +61,15 @@ const routes: Routes = [
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
-    RouterModule.forRoot(routes) //.forRoot is super crucial
-
+    RouterModule.forRoot(routes), //.forRoot is super crucial
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    EmailService,
+    RestService,
+    AuthService,
+    AuthGuardService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
