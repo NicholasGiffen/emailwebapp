@@ -1,10 +1,13 @@
 .container {
     border: 2px solid #ccc;
-    margin-top: 16px;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px #aaa;
     width: 60%;
- 
+
+}
+
+.button-rad{
+    border-radius:  25%;
 }
 
 .from {
@@ -12,8 +15,12 @@
     align-items: left;
 }
 
+.from-input{
+    margin-left: 25px;
+}
+
 .width {
-    width: 300px;
+    width: 500px;
 }
 
 

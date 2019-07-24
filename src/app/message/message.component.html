@@ -1,4 +1,7 @@
-<div class="bg-primary container mt-5">
+<div class="background-image pt-5">
+    
+    
+<div class="bg-primary container ">
     <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
         <div class="row text-center">
             <div class="col ">
@@ -11,26 +14,26 @@
 
         <!--Input field for Email-->
 
-        <div class="row">
+        <div class="row ">
             <div class="col">
                 <div class="form-group from width">
                     <label for="">From</label>
-                    <input type="text" class="form-control ml-3" formControlName="from">
+                    <input type="text" class="from-input form-control " formControlName="from">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <div class="form-group">
-                        <button for="">CC</button>
+                        <button class="button-rad mr-1" for="">CC</button>
                         
                     </div>
                 </div>
             </div>
     
-            <div class="row">
-                <div class="col">
+            <div class="row ">
+                <div class="col ">
                     <div class="form-group">
-                        <button for="">BCC</button>
+                        <button class="button-rad" for="">BCC</button>
                     </div>
                 </div>
             </div>
@@ -67,4 +70,5 @@
 
 
     </form>
+</div>
 </div>
