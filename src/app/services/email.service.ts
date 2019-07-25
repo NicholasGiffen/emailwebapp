@@ -4,11 +4,11 @@ import { environment } from '../../environments/environment';
 import { AuthService } from './auth.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' //provide it in root module 
 })
 export class EmailService {
   constructor(
-    private readonly rest: RestService, 
+    private readonly rest: RestService, //can and just did inject services into eachother
     private readonly auth: AuthService
   ) {}
 
